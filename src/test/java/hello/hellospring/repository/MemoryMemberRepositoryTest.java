@@ -30,7 +30,7 @@ class MemoryMemberRepositoryTest {
 
         Member result = repository.findById(member.getId()).get();
         // Assertions.assertEquals(null, member); // Junit을 통한 Test
-        assertThat(member).isEqualTo(result); // Java Core를 통한 Assertion. Jest와 마찬가지로 직관적
+        assertThat(member).isEqualTo(result); // assert.core를 통한 Assertion. Jest와 마찬가지로 직관적
     }
 
     @Test

@@ -1,5 +1,8 @@
 package hello.hellospring.domain;
 
+/**
+ * 회원 Domain Class
+ */
 public class Member {
     private Long id;
     private String name;
