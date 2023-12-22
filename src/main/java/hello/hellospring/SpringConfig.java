@@ -1,5 +1,6 @@
 package hello.hellospring;
 
+import hello.hellospring.aop.TimeTraceAop;
 import hello.hellospring.repository.*;
 import hello.hellospring.service.MemberService;
 import jakarta.persistence.EntityManager;
@@ -42,5 +43,11 @@ public class SpringConfig {
 ////        return new JdbcMemberRepository(dataSource);
 ////        return new JdbcTemplateMemberRepository(dataSource);
 ////        return new JapMemberRepository(entityManager);
+//    }
+
+    // Bean을 통해서 등록 가능하다.
+//    @Bean
+//    public TimeTraceAop timeTraceAop() {
+//        return new TimeTraceAop();
 //    }
 }
